@@ -1,0 +1,168 @@
+*,
+*::after,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color:rgb(85, 22, 85);
+   
+}
+.container-2{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-2 h1{
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.passwordSection{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    
+}
+.passwordSection input{
+    background-color: rgba(0, 0, 0, 0.46);
+    color: yellow;
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 90%;  
+    padding: 0.6rem 1.3rem;
+    border-radius: 10px;  
+    border-bottom: 5px solid purple;
+}
+.passwordSection i{
+    position: absolute;
+    top: 27%;
+    right: 10%;
+    font-size: 1.2rem;
+    color:white;
+}
+.pass-info{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.46);
+    margin-top: 1rem;
+    padding: 1.5rem;
+    
+    
+}
+.password-Length{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.slider{
+    margin: 0.7rem 0;
+}
+.slider input{
+    
+    appearance: none; 
+    background-color: blueviolet;
+    width: 100%;
+    border-radius: 9px;
+    height: 0.75rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    /* overflow: hidden; */
+}
+.slider input::-webkit-slider-thumb{
+    appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: all 100ms ease-in;
+    position: relative;
+   
+}
+.slider input::-webkit-slider-thumb:hover{
+    border: 2px solid yellow;
+    background-color: black;
+    box-shadow: 0px 0px 10px 5px white;
+
+}
+
+.slider input:focus{
+  outline: 2px solid yellow;  
+}
+.passwordStrength{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.9rem 0;
+    color: white;
+}
+.passwordStrength div{
+   width: 15px;
+   height: 15px;
+   line-height: 1rem;
+   border-radius: 50px;
+   background-color: gray;
+   box-shadow: -1px 1px  8px white;
+}
+.checkBoxContents{
+    color: white;
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
+    gap: 5px;
+}
+.check input{
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    border: 1px solid aqua;
+    position: relative;
+    cursor: pointer;
+    
+}
+.check input:checked{
+    background-color: aqua;
+}
+.check input:checked::before{
+    content: "✓";
+    position: absolute;
+    top: -75%;
+    left: 10%;
+    font-size: 14px;
+  
+}
+
+.passwordGenerator button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.6rem 2rem;
+    color: yellow;
+    background-color: purple;
+    border-bottom: 5px solid yellow;
+    font-weight: 800;
+
+}
